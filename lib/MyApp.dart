@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stack_practice/listview_&_listviewbuilder.dart';
-import 'package:stack_practice/listviewseparator.dart';
+import 'package:stack_practice/media_query.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -14,7 +13,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-    home: ListViewSeparator(),
+    home:  MediaQueryDemo(),
     );
   }
 }

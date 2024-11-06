@@ -7,7 +7,7 @@ class AlignWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Align Widget'),
+        title: const Text('Align Widget'),
         centerTitle: true,
       ),
       body: Align(
@@ -18,7 +18,7 @@ class AlignWidget extends StatelessWidget {
         child: Container(
           height: 100,
           width: 100,
-          decoration: BoxDecoration(color: Colors.amber),
+          decoration: const BoxDecoration(color: Colors.amber),
         ),
       ),
     );
