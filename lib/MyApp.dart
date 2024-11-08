@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:stack_practice/clip_path.dart';
+import 'package:stack_practice/clippath_task.dart';
 import 'package:stack_practice/daggablescrollablesheet.dart';
 import 'package:stack_practice/inflation_calculator.dart';
+import 'package:stack_practice/media_query.dart';
 import 'package:stack_practice/wrap_widget.dart';
 
 class MyApp extends StatelessWidget {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-    home:  ClipPathDemo(),
+    home:  ClipPathTaskDemo(),
     );
   }
 }
