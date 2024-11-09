@@ -5,12 +5,14 @@ void main() {
 }
 
 class ClipPathTaskDemo extends StatelessWidget {
+  const ClipPathTaskDemo({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('ClipPath Demo'),
+          title: const Text('ClipPath Demo'),
           backgroundColor: Colors.green,
         ),
         body: Center(
@@ -26,7 +28,7 @@ class ClipPathTaskDemo extends StatelessWidget {
                   height: 200,
                 ),
               ),
-              SizedBox(height: 40), // Spacer between shapes
+              const SizedBox(height: 40), // Spacer between shapes
 
               // Triangle shape
               ClipPath(
@@ -37,7 +39,7 @@ class ClipPathTaskDemo extends StatelessWidget {
                   height: 200,
                 ),
               ),
-              SizedBox(height: 40), // Spacer between shapes
+              const SizedBox(height: 40), // Spacer between shapes
 
               // Hexagon shape
               ClipPath(

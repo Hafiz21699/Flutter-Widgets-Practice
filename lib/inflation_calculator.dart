@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class InflationCalculator extends StatefulWidget {
+  const InflationCalculator({super.key});
+
   @override
   _InflationCalculatorState createState() => _InflationCalculatorState();
 }
@@ -26,7 +28,7 @@ class _InflationCalculatorState extends State<InflationCalculator> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Inflation Calculator'),
+        title: const Text('Inflation Calculator'),
         backgroundColor: Colors.green,
       ),
       body: Padding(
@@ -36,38 +38,38 @@ class _InflationCalculatorState extends State<InflationCalculator> {
             TextField(
               controller: _initialAmountController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Initial Amount',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             TextField(
               controller: _inflationRateController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Annual Inflation Rate (%)',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             TextField(
               controller: _yearsController,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(
+              decoration: const InputDecoration(
                 labelText: 'Number of Years',
                 border: OutlineInputBorder(),
               ),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: _calculateInflation,
-              child: Text('Calculate Future Value'),
+              child: const Text('Calculate Future Value'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Text(
               'Future Value: \$${_futureValue.toStringAsFixed(2)}',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
             ),
           ],
         ),

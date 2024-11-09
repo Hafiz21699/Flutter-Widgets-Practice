@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class NestedScrollViewExample extends StatelessWidget {
+  const NestedScrollViewExample({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,7 +14,7 @@ class NestedScrollViewExample extends StatelessWidget {
               floating: false,
               pinned: true,
               flexibleSpace: FlexibleSpaceBar(
-                title: Text(
+                title: const Text(
                   "Nested Scroll View Example",
                   style: TextStyle(color: Colors.white),
                 ),

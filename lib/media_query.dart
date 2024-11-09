@@ -7,7 +7,7 @@ class MediaQueryDemo extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _mediaquery = MediaQuery.sizeOf(context);
+    var mediaquery = MediaQuery.sizeOf(context);
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blueGrey.shade600,
@@ -22,8 +22,8 @@ class MediaQueryDemo extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Container(
-            width: _mediaquery.width * 0.5,
-            height: _mediaquery.height * 0.8,
+            width: mediaquery.width * 0.5,
+            height: mediaquery.height * 0.8,
             decoration: BoxDecoration(
                 image: DecorationImage(
                     image: NetworkImage(
