@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:stack_practice/aspect_ratio.dart';
-import 'package:stack_practice/clippath_task.dart';
-import 'package:stack_practice/constrained_box.dart';
-import 'package:stack_practice/drawer_&_bnb.dart';
-import 'package:stack_practice/fitted%20box.dart';
+import 'package:flutter/rendering.dart';
+import 'package:stack_practice/card_widget.dart';
+import 'package:stack_practice/fractionallysizedbox_widget.dart';
+import 'package:stack_practice/spacer.dart';
+import 'package:stack_practice/transform_widget.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: AspectRatioExample(),
+      home: CardWidgetDemo(),
     );
   }
 }
