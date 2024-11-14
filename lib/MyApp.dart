@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:stack_practice/card_widget.dart';
-import 'package:stack_practice/fractionallysizedbox_widget.dart';
-import 'package:stack_practice/spacer.dart';
-import 'package:stack_practice/transform_widget.dart';
+import 'package:stack_practice/dialogs.dart';
+import 'package:stack_practice/clipOval.dart';
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,7 +15,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: CardWidgetDemo(),
+      home: AlertDialogDemo(),
     );
   }
 }
