@@ -1,15 +1,15 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 
-class AlertDialogDemo extends StatefulWidget {
-  const AlertDialogDemo({super.key});
+class DialogDemo extends StatefulWidget {
+  const DialogDemo({super.key});
 
   @override
-  State<AlertDialogDemo> createState() => _AlertDialogDemoState();
+  State<DialogDemo> createState() => _DialogDemoState();
 }
 
-class _AlertDialogDemoState extends State<AlertDialogDemo> {
+class _DialogDemoState extends State<DialogDemo> {
   void _basicDialog() {
     showDialog(
       context: context,
@@ -17,7 +17,7 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
         return Dialog(
           elevation: 20,
           backgroundColor: Colors.blueGrey.shade100,
-          shadowColor: Colors.amber,
+          shadowColor: const Color.fromARGB(255, 114, 0, 235),
           child: Container(
             padding: EdgeInsets.all(20),
             child: Column(
@@ -25,6 +25,9 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
               children: [
                 Text("Custom Dialog"),
                 ElevatedButton(
+                  style: ButtonStyle(
+                      elevation: WidgetStatePropertyAll(15),
+                      shadowColor: WidgetStatePropertyAll(Colors.purple)),
                   onPressed: () => Navigator.of(context).pop(),
                   child: Text("Close"),
                 ),
@@ -82,23 +85,23 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
         content: Text('Are you sure you want to exit?'),
         actions: [
           MaterialButton(
-              child: Text('Yes'),
               color: Colors.green,
               elevation: 20,
               shape: BeveledRectangleBorder(
                   side: BorderSide(style: BorderStyle.solid)),
               onPressed: () {
                 Navigator.pop(context);
-              }),
+              },
+              child: Text('Yes')),
           MaterialButton(
-              child: Text('No'),
               color: Colors.red.shade300,
               elevation: 20,
               shape: BeveledRectangleBorder(
                   side: BorderSide(style: BorderStyle.solid)),
               onPressed: () {
                 Navigator.pop(context);
-              })
+              },
+              child: Text('No'))
         ],
       ),
     );
@@ -122,34 +125,34 @@ class _AlertDialogDemoState extends State<AlertDialogDemo> {
           children: <Widget>[
             MaterialButton(
                 elevation: 30,
+                color: Colors.purple,
+                onPressed: _alertDialog,
                 child: Text(
                   'ALERT DIALOG',
                   style: TextStyle(color: Colors.white),
-                ),
-                color: Colors.purple,
-                onPressed: _alertDialog),
+                )),
             SizedBox(
               height: 15,
             ),
             MaterialButton(
                 elevation: 30,
+                color: Colors.purple,
+                onPressed: _simpleDialog,
                 child: Text(
                   'SIMPLE DIALOG',
                   style: TextStyle(color: Colors.white),
-                ),
-                color: Colors.purple,
-                onPressed: _simpleDialog),
+                )),
             SizedBox(
               height: 15,
             ),
             MaterialButton(
                 elevation: 30,
+                color: Colors.purple,
+                onPressed: _basicDialog,
                 child: Text(
                   'BASIC DIALOG',
                   style: TextStyle(color: Colors.white),
-                ),
-                color: Colors.purple,
-                onPressed: _basicDialog),
+                )),
           ],
         ),
       ),

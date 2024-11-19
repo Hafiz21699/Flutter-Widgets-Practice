@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:stack_practice/dialogs.dart';
-import 'package:stack_practice/clipOval.dart';
+import 'package:stack_practice/animated_container.dart';
+import 'package:stack_practice/bottom_&_modalbottom_sheet.dart';
+import 'package:stack_practice/daggablescrollablesheet.dart';
+import 'package:stack_practice/expansiontile.dart';
+import 'package:stack_practice/popupmenubutton.dart';
+import 'package:stack_practice/time_picker.dart';
 
 
 class MyApp extends StatelessWidget {
@@ -15,7 +19,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.white),
         useMaterial3: true,
       ),
-      home: AlertDialogDemo(),
+      home: const AnimatedContainerDemo(),
     );
   }
 }

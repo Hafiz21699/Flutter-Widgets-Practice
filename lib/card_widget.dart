@@ -20,7 +20,7 @@ class CardWidgetDemo extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: <Widget>[
-          Container(
+          SizedBox(
             height: 100,
             width: double.infinity,
             child: Card(
@@ -42,7 +42,7 @@ class CardWidgetDemo extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             height: 100,
             width: double.infinity,
             child: Card(
@@ -64,7 +64,7 @@ class CardWidgetDemo extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             height: 100,
             width: double.infinity,
             child: Card(
@@ -86,7 +86,7 @@ class CardWidgetDemo extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             height: 100,
             width: double.infinity,
             child: Card(
@@ -108,7 +108,7 @@ class CardWidgetDemo extends StatelessWidget {
               ),
             ),
           ),
-          Container(
+          SizedBox(
             height: 100,
             width: double.infinity,
             child: Card(
